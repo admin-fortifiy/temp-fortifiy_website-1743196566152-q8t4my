@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.urbanist-font {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.dm-sans-font {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.dm-serif-text-font {
+    font-family: "DM Serif Text", serif;
+    font-optical-sizing: auto;
+}
+.plus-jakarta-sans-font {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.jost-font {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.kumbh-sans-font {
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth !important;
+    background-color: #fff;
+    background-image: url(../public/assets/images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    @apply mx-auto max-w-[1416px] xl:px-[96px] sm:px-[48px] px-[20px];
+}
+
+.feature-box {
+    box-shadow: 0px 1px 3px 0px rgba(18, 20, 32, 0.2);
+    border: 1px solid transparent;
+}
+
+.feature-box:hover {
+    border: 1px solid #f2f4fb;
+    box-shadow: 0px 20px 30px 0px rgba(1, 6, 20, 0.1);
+}
+
+.footer-content {
+    background-image: url(../public/assets/images/footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #01103D;
+    overflow: hidden;
+}
+
+@media all and (max-width: 1023px) {
+    .footer-content {
+        clip-path: polygon(50% 8%, 100% 0%, 100% 100%, 0 100%, 0 1%);
+        background-image: none;
+    }
+}
+@media all and (max-width: 575px) {
+    .footer-content {
+        clip-path: polygon(50% 4%, 100% 0%, 100% 100%, 0 100%, 0 1%);
+    }
+}
+
+@keyframes scrollUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.animation-up-down {
+    animation: scrollUpDown 3s infinite ease-in-out;
+}
+
+.connect-bg-shape {
+    border-radius: 386px;
+    background-image: url(../public/assets/images/connect_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    filter: blur(10px);
+}
